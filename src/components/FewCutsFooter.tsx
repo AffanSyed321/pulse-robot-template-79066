@@ -24,7 +24,7 @@ const FewCutsFooter = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-3xl font-cyber font-bold text-primary mb-4">
+              <h3 className="text-3xl font-vice font-bold text-primary mb-4">
                 FewCuts.Inc
               </h3>
               <div className="flex items-start space-x-3 text-muted-foreground">

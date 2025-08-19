@@ -11,7 +11,7 @@ const FewCutsNavbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-cyber font-bold text-primary">
+            <h1 className="text-2xl font-vice font-bold text-primary">
               FewCuts Inc.
             </h1>
           </div>

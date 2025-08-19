@@ -143,9 +143,9 @@ export default {
 			},
 			fontFamily: {
 				'sans': ['Inter', 'sans-serif'],
-				'display': ['Orbitron', 'Rajdhani', 'Inter', 'sans-serif'],
-				'cyber': ['Orbitron', 'monospace'],
-				'retro': ['Rajdhani', 'sans-serif'],
+				'display': ['Righteous', 'Fjalla One', 'Inter', 'sans-serif'],
+				'vice': ['Righteous', 'sans-serif'],
+				'retro': ['Fjalla One', 'sans-serif'],
 			},
 			boxShadow: {
 				'elegant': '0 4px 20px rgba(0, 0, 0, 0.08)',

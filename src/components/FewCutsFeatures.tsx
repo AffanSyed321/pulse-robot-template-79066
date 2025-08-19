@@ -53,7 +53,7 @@ const FewCutsFeatures = () => {
               </div>
 
               {/* Content */}
-              <h3 className="text-2xl font-cyber font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+              <h3 className="text-2xl font-vice font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
                 {feature.title}
               </h3>
               <p className="text-muted-foreground text-lg leading-relaxed">

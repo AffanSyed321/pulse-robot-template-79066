@@ -14,7 +14,7 @@ const FewCutsHero = () => {
         <div className="space-y-8">
           {/* Main Headline */}
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-cyber font-black tracking-tight">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-vice font-black tracking-tight">
               <span className="block text-foreground">Automate your</span>
               <span className="block bg-vice-gradient bg-clip-text text-transparent">
                 short-format content
