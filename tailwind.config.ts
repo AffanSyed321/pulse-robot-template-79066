@@ -63,19 +63,19 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Pulse Robot
-				pulse: {
-					"50": "#fff7ed",
-					"100": "#ffedd5",
-					"200": "#fed7aa",
-					"300": "#fdba74",
-					"400": "#fb923c",
-					"500": "#f97316", // Primary orange
-					"600": "#ea580c",
-					"700": "#c2410c",
-					"800": "#9a3412",
-					"900": "#7c2d12",
-					"950": "#431407",
+				// Custom colors for FewCuts Vice City theme
+				vice: {
+					"50": "#fef7ff",
+					"100": "#fdeeff",
+					"200": "#fcddff",
+					"300": "#f9bbff",
+					"400": "#f589ff",
+					"500": "#ed56ff", // Primary pink
+					"600": "#d633ee",
+					"700": "#b421d4",
+					"800": "#951dae",
+					"900": "#7a1b8a",
+					"950": "#52095c",
 				},
 				dark: {
 					"900": "#121212", // Almost black
@@ -137,15 +137,15 @@ export default {
 				'float': 'float 6s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'hero-gradient': 'linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)',
-				'hero-gradient-2': 'linear-gradient(90deg, hsla(39, 100%, 77%, 1) 0%, hsla(22, 90%, 57%, 1) 100%)',
-				'pulse-gradient': 'linear-gradient(180deg, rgba(249,115,22,0.8) 0%, rgba(249,115,22,0) 100%)',
+				'vice-gradient': 'linear-gradient(135deg, #ed56ff 0%, #ff1b8d 50%, #ff6b35 100%)',
+				'vice-dark': 'linear-gradient(135deg, #52095c 0%, #7a1b8a 50%, #951dae 100%)',
+				'vice-glow': 'linear-gradient(90deg, rgba(237, 86, 255, 0.8) 0%, rgba(255, 27, 141, 0.8) 100%)',
 			},
 			fontFamily: {
 				'sans': ['Inter', 'sans-serif'],
-				'display': ['Brockmann', 'SF Pro Display', 'Inter', 'sans-serif'],
-				'brockmann': ['Brockmann', 'serif'],
-				'playfair': ['"Playfair Display"', 'serif'],
+				'display': ['Orbitron', 'Rajdhani', 'Inter', 'sans-serif'],
+				'cyber': ['Orbitron', 'monospace'],
+				'retro': ['Rajdhani', 'sans-serif'],
 			},
 			boxShadow: {
 				'elegant': '0 4px 20px rgba(0, 0, 0, 0.08)',
