@@ -25,21 +25,10 @@ const FewCutsHero = () => {
             </h1>
           </div>
 
-          {/* CTA Button */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="button-primary text-lg px-8 py-4 group">
-              Get Started
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-2 border-primary hover:bg-primary hover:text-primary-foreground">
-              <Play className="mr-2 w-5 h-5" />
-              Watch Demo
-            </Button>
-          </div>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-retro">
-            Using AI to select the best clips from your long-format content.
+          <p className="text-3xl md:text-4xl lg:text-5xl text-muted-foreground max-w-3xl mx-auto font-retro">
+            Context Matters!
           </p>
         </div>
       </div>

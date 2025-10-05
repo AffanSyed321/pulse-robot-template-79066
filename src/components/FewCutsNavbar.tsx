@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const FewCutsNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
@@ -19,24 +21,21 @@ const FewCutsNavbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a href="#home" className="nav-link">
+              <Link
+                to="/"
+                className={`nav-link ${location.pathname === '/' ? 'text-primary' : ''}`}
+              >
                 Home
-              </a>
-              <a href="#pricing" className="nav-link">
-                Plans & Pricing
-              </a>
+              </Link>
+              <Link
+                to="/pricing"
+                className={`nav-link ${location.pathname === '/pricing' ? 'text-primary' : ''}`}
+              >
+                Pricing
+              </Link>
             </div>
           </div>
 
-          {/* Desktop Auth Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="text-foreground hover:text-primary">
-              Log In
-            </Button>
-            <Button className="button-primary">
-              Get Started
-            </Button>
-          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -53,30 +52,20 @@ const FewCutsNavbar = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-card border-t border-border">
-              <a
-                href="#home"
-                className="block px-3 py-2 text-foreground hover:text-primary"
+              <Link
+                to="/"
+                className={`block px-3 py-2 text-foreground hover:text-primary ${location.pathname === '/' ? 'text-primary' : ''}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
-              </a>
-              <a
-                href="#pricing"
-                className="block px-3 py-2 text-foreground hover:text-primary"
+              </Link>
+              <Link
+                to="/pricing"
+                className={`block px-3 py-2 text-foreground hover:text-primary ${location.pathname === '/pricing' ? 'text-primary' : ''}`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Plans & Pricing
-              </a>
-              <div className="pt-4 pb-3 border-t border-border">
-                <div className="flex flex-col space-y-2">
-                  <Button variant="ghost" className="text-foreground hover:text-primary justify-start">
-                    Log In
-                  </Button>
-                  <Button className="button-primary justify-start">
-                    Get Started
-                  </Button>
-                </div>
-              </div>
+                Pricing
+              </Link>
             </div>
           </div>
         )}
